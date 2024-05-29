@@ -1,0 +1,250 @@
+/* .poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* .poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(3, 0, 31);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sideBar {
+  flex: 3;
+  border-right: 1px solid rgb(100, 100, 100);
+}
+
+.main {
+  flex: 9;
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.upperSide {
+  padding: 2.5rem;
+  padding-right: 18rem;
+  border-bottom: 1px solid rgb(100, 100, 100);
+  height: 70%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .upperSide {
+    padding-right: 2.5rem;
+  }
+}
+
+.upperSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.upperSideBtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatgpt-logo {
+  display: flex;
+  align-items: center;
+}
+
+.upperSideTop {
+  margin-top: 2.5rem;
+}
+.midBtn {
+  background-color: #5a4bff;
+  border: none;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .midBtn {
+    width: 20rem;
+    height: 4rem;
+  }
+}
+
+.addBtn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.plusimg {
+  height: 30px;
+}
+.upperSideBtn {
+  margin-top: 10px;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  color: rgba(222, 222, 222, 1);
+  padding: 1.5rem;
+  width: 25rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(98, 98, 98, 1);
+}
+@media only screen and (max-width: 1200px) {
+  .query {
+    width: 20rem;
+    height: 4rem;
+  }
+}
+
+.query > img {
+  margin-right: 2rem;
+  object-fit: cover;
+  height: 1.75rem;
+}
+
+.lowerSide {
+  padding: 2rem;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 0.75rem;
+}
+.listItemImg {
+  margin: 1rem;
+  padding-right: 1rem;
+}
+
+.listItem:nth-child(1) > .listItmeImg {
+  margin-right: 0.5rem;
+}
+
+.listItem:nth-child(3) > .listItmeImg {
+  margin-right: 0.75rem;
+}
+
+.main {
+  min-height: calc(100vh - 14rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 10rem;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.chatFooter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inp {
+  padding: 0.5rem 1.5rem;
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid gray;
+}
+.inp > input {
+  flex: 1;
+  outline: none;
+  padding: 1.25rem;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.inp > input,
+.send {
+  background: transparent;
+  border: none;
+}
+
+.chatFooter > p {
+  margin: 2rem 0;
+}
+.chats {
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 70rem;
+  height: calc(100vh - 17rem);
+}
+
+.chat {
+  margin: 1rem;
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: start;
+}
+.chat > img {
+  object-fit: cover;
+  width: 3.5rem;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+}
+
+.bot {
+  padding: 2rem 2rem;
+  line-height: 2rem; /* 24px */
+  background: rgba(28, 30, 58, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  text-align: start;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bot {
+    align-items: start;
+  }
+}
+
+
